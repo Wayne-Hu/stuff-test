@@ -34,9 +34,11 @@ beforeEach(() => {
 });
 
 test('throws when used outside ReadLaterProvider', () => {
+  const spy = jest.spyOn(console, 'error').mockImplementation(() => {});
   expect(() => renderHook(() => useReadLater())).toThrow(
     'useReadLater must be used within ReadLaterProvider',
   );
+  spy.mockRestore();
 });
 
 test('loads saved IDs from server on mount', async () => {
