@@ -14,12 +14,14 @@ function ArticleCard({
   selected,
   onPress,
   onBookmark,
+  isToggling,
 }: {
   article: Article;
   saved: boolean;
   selected: boolean;
   onPress: () => void;
   onBookmark: (e: React.MouseEvent) => void;
+  isToggling: boolean;
 }) {
   return (
     <article
@@ -44,14 +46,19 @@ function ArticleCard({
       </div>
       <button
         onClick={onBookmark}
+        disabled={isToggling}
         className="absolute top-2.5 right-2.5 p-1.5 rounded-full bg-white/80 hover:bg-white transition-colors"
         aria-label={saved ? 'Remove bookmark' : 'Bookmark'}
       >
-        <BookmarkIcon
-          filled={saved}
-          size={20}
-          className={saved ? 'text-blue-600' : 'text-gray-400'}
-        />
+        {isToggling ? (
+          <div className="w-5 h-5 border-2 border-blue-600 border-t-transparent rounded-full animate-spin" />
+        ) : (
+          <BookmarkIcon
+            filled={saved}
+            size={20}
+            className={saved ? 'text-blue-600' : 'text-gray-400'}
+          />
+        )}
       </button>
     </article>
   );
@@ -61,7 +68,15 @@ export default function FeedScreen({ onArticlePress, selectedId }: Props) {
   const [articles, setArticles] = useState<Article[] | undefined>(undefined);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<Error | null>(null);
+  const [togglingId, setTogglingId] = useState<string | null>(null);
   const { isSaved, toggle } = useReadLater();
+
+  const handleToggle = async (articleId: string, e: React.MouseEvent) => {
+    e.stopPropagation();
+    setTogglingId(articleId);
+    await toggle(articleId);
+    setTogglingId(null);
+  };
 
   useEffect(() => {
     fetchArticles()
@@ -95,10 +110,8 @@ export default function FeedScreen({ onArticlePress, selectedId }: Props) {
           saved={isSaved(article.id)}
           selected={article.id === selectedId}
           onPress={() => onArticlePress(article)}
-          onBookmark={(e) => {
-            e.stopPropagation();
-            toggle(article.id);
-          }}
+          isToggling={togglingId === article.id}
+          onBookmark={(e) => handleToggle(article.id, e)}
         />
       ))}
     </div>

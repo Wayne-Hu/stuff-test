@@ -22,11 +22,13 @@ function ArticleCard({
   onPress,
   onBookmark,
   saved,
+  isToggling,
 }: {
   article: Article;
   onPress: () => void;
   onBookmark: () => void;
   saved: boolean;
+  isToggling: boolean;
 }) {
   return (
     <TouchableOpacity style={styles.card} onPress={onPress} activeOpacity={0.7}>
@@ -42,12 +44,16 @@ function ArticleCard({
           {article.summary}
         </Text>
       </View>
-      <TouchableOpacity onPress={onBookmark} style={styles.bookmarkBtn} hitSlop={8}>
-        <Ionicons
-          name={saved ? 'bookmark' : 'bookmark-outline'}
-          size={22}
-          color={saved ? '#0066cc' : '#888'}
-        />
+      <TouchableOpacity onPress={onBookmark} style={styles.bookmarkBtn} hitSlop={8} disabled={isToggling}>
+        {isToggling ? (
+          <ActivityIndicator size="small" color="#0066cc" />
+        ) : (
+          <Ionicons
+            name={saved ? 'bookmark' : 'bookmark-outline'}
+            size={22}
+            color={saved ? '#0066cc' : '#888'}
+          />
+        )}
       </TouchableOpacity>
     </TouchableOpacity>
   );
@@ -57,6 +63,7 @@ export default function FeedScreen({ navigation }: Props) {
   const [articles, setArticles] = useState<Article[] | undefined>(undefined);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<Error | null>(null);
+  const [togglingId, setTogglingId] = useState<string | null>(null);
 
   useEffect(() => {
     fetchArticles()
@@ -66,6 +73,12 @@ export default function FeedScreen({ navigation }: Props) {
   }, []);
 
   const { isSaved, toggle } = useReadLater();
+
+  const handleToggle = async (articleId: string) => {
+    setTogglingId(articleId);
+    await toggle(articleId);
+    setTogglingId(null);
+  };
 
   if (isLoading) {
     return (
@@ -92,7 +105,8 @@ export default function FeedScreen({ navigation }: Props) {
           article={item}
           saved={isSaved(item.id)}
           onPress={() => navigation.navigate('Article', { article: item })}
-          onBookmark={() => toggle(item.id)}
+          isToggling={togglingId === item.id}
+          onBookmark={() => handleToggle(item.id)}
         />
       )}
       contentContainerStyle={styles.list}
