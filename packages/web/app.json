@@ -1,0 +1,12 @@
+{
+  "expo": {
+    "name": "read-later-web",
+    "slug": "read-later-web",
+    "version": "1.0.0",
+    "platforms": ["web"],
+    "assetBundlePatterns": ["**/*"],
+    "web": {
+      "bundler": "webpack"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "read-later",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "server"
+  ],
+  "scripts": {
+    "server": "yarn workspace @read-later/server start",
+    "server:dev": "yarn workspace @read-later/server dev",
+    "mobile": "yarn workspace @read-later/mobile start",
+    "ios": "yarn workspace @read-later/mobile ios",
+    "web": "yarn workspace @read-later/web start"
+  }
+}

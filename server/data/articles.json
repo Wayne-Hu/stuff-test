@@ -1,0 +1,29 @@
+[
+  {
+    "id": "1",
+    "title": "Understanding React Native Architecture",
+    "url": "https://example.com/react-native-architecture",
+    "description": "A deep dive into the new React Native architecture with JSI and Fabric.",
+    "author": "Jane Doe",
+    "publishedAt": "2024-01-15T10:00:00.000Z",
+    "tags": ["react-native", "mobile", "architecture"]
+  },
+  {
+    "id": "2",
+    "title": "Getting Started with Expo",
+    "url": "https://example.com/expo-getting-started",
+    "description": "Everything you need to know to start building with Expo.",
+    "author": "John Smith",
+    "publishedAt": "2024-02-01T09:00:00.000Z",
+    "tags": ["expo", "react-native", "tutorial"]
+  },
+  {
+    "id": "3",
+    "title": "Monorepo Setup with Yarn Workspaces",
+    "url": "https://example.com/yarn-workspaces-monorepo",
+    "description": "How to structure a monorepo using Yarn workspaces for sharing code.",
+    "author": "Alice Johnson",
+    "publishedAt": "2024-03-10T14:00:00.000Z",
+    "tags": ["monorepo", "yarn", "tooling"]
+  }
+]

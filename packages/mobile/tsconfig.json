@@ -1,0 +1,14 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "strict": true,
+    "module": "preserve",
+    "moduleResolution": "bundler",
+    "moduleDetection": "force",
+    "paths": {
+      "@read-later/shared": [
+        "../shared/src/index.ts"
+      ]
+    }
+  }
+}
