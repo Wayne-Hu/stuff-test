@@ -2,28 +2,25 @@
   {
     "id": "1",
     "title": "Understanding React Native Architecture",
-    "url": "https://example.com/react-native-architecture",
-    "description": "A deep dive into the new React Native architecture with JSI and Fabric.",
-    "author": "Jane Doe",
+    "summary": "A deep dive into the new React Native architecture with JSI and Fabric.",
     "publishedAt": "2024-01-15T10:00:00.000Z",
-    "tags": ["react-native", "mobile", "architecture"]
+    "imageUrl": "https://picsum.photos/seed/rn-arch/800/600",
+    "section": "Technology"
   },
   {
     "id": "2",
     "title": "Getting Started with Expo",
-    "url": "https://example.com/expo-getting-started",
-    "description": "Everything you need to know to start building with Expo.",
-    "author": "John Smith",
+    "summary": "Everything you need to know to start building with Expo.",
     "publishedAt": "2024-02-01T09:00:00.000Z",
-    "tags": ["expo", "react-native", "tutorial"]
+    "imageUrl": "https://picsum.photos/seed/expo/800/600",
+    "section": "Tutorial"
   },
   {
     "id": "3",
     "title": "Monorepo Setup with Yarn Workspaces",
-    "url": "https://example.com/yarn-workspaces-monorepo",
-    "description": "How to structure a monorepo using Yarn workspaces for sharing code.",
-    "author": "Alice Johnson",
+    "summary": "How to structure a monorepo using Yarn workspaces for sharing code.",
     "publishedAt": "2024-03-10T14:00:00.000Z",
-    "tags": ["monorepo", "yarn", "tooling"]
+    "imageUrl": "https://picsum.photos/seed/monorepo/800/600",
+    "section": "Tooling"
   }
 ]
