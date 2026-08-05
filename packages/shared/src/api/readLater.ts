@@ -5,7 +5,8 @@ import { fetchWithTimeout, withRetry } from './client';
 export async function fetchReadLater(): Promise<ReadLaterItem[]> {
   const res = await withRetry(() => fetchWithTimeout(`${getApiBaseUrl()}/read-later`));
   if (!res.ok) throw new Error('Failed to fetch read later list');
-  return res.json();
+  const { items } = await res.json();
+  return items;
 }
 
 export async function addToReadLater(articleId: string): Promise<ReadLaterItem> {

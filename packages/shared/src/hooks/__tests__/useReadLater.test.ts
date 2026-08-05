@@ -8,8 +8,8 @@ jest.mock('../../api/readLater');
 const mockFetchReadLater = fetchReadLater as jest.MockedFunction<typeof fetchReadLater>;
 
 const ITEMS: ReadLaterItem[] = [
-  { articleId: 'a1', addedAt: '2024-01-01T00:00:00Z' },
-  { articleId: 'a2', addedAt: '2024-01-02T00:00:00Z' },
+  { articleId: 'a1', savedAt: '2024-01-01T00:00:00Z' },
+  { articleId: 'a2', savedAt: '2024-01-02T00:00:00Z' },
 ];
 
 function makeStorage(initial?: string): jest.Mocked<Storage> {

@@ -17,7 +17,7 @@ function makeStorage(initial?: ReadLaterItem[]): jest.Mocked<Storage> {
   };
 }
 
-const EXISTING: ReadLaterItem[] = [{ articleId: 'existing', addedAt: '2024-01-01T00:00:00Z' }];
+const EXISTING: ReadLaterItem[] = [{ articleId: 'existing', savedAt: '2024-01-01T00:00:00Z' }];
 
 beforeEach(() => {
   jest.clearAllMocks();
@@ -43,13 +43,13 @@ describe('useAddToReadLater', () => {
     act(() => { result.current.mutate('a1'); });
     expect(result.current.isLoading).toBe(true);
 
-    await act(async () => { resolve({ articleId: 'a1', addedAt: '' }); });
+    await act(async () => { resolve({ articleId: 'a1', savedAt: '' }); });
     expect(result.current.isLoading).toBe(false);
   });
 
   test('calls API with articleId', async () => {
     const storage = makeStorage();
-    mockAddToReadLater.mockResolvedValue({ articleId: 'a1', addedAt: '' });
+    mockAddToReadLater.mockResolvedValue({ articleId: 'a1', savedAt: '' });
 
     const { result } = renderHook(() => useAddToReadLater(storage));
     await act(async () => { await result.current.mutate('a1'); });
@@ -59,7 +59,7 @@ describe('useAddToReadLater', () => {
 
   test('writes new item to storage when list is empty', async () => {
     const storage = makeStorage();
-    mockAddToReadLater.mockResolvedValue({ articleId: 'a1', addedAt: '' });
+    mockAddToReadLater.mockResolvedValue({ articleId: 'a1', savedAt: '' });
 
     const { result } = renderHook(() => useAddToReadLater(storage));
     await act(async () => { await result.current.mutate('a1'); });
@@ -95,7 +95,7 @@ describe('useAddToReadLater', () => {
   test('clears previous error on retry', async () => {
     const storage = makeStorage();
     mockAddToReadLater.mockRejectedValueOnce(new Error('fail'));
-    mockAddToReadLater.mockResolvedValueOnce({ articleId: 'a1', addedAt: '' });
+    mockAddToReadLater.mockResolvedValueOnce({ articleId: 'a1', savedAt: '' });
 
     const { result } = renderHook(() => useAddToReadLater(storage));
     await act(async () => { await result.current.mutate('a1'); });

@@ -9,7 +9,7 @@ export interface Article {
 
 export interface ReadLaterItem {
   articleId: string;
-  addedAt: string;
+  savedAt: string;
 }
 
 export interface Storage {

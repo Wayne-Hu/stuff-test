@@ -7,11 +7,11 @@ const addToStorage = async (storage: Storage, articleId: string) => {
   if (readLaterList) {
     JSON.parse(readLaterList).push({
       articleId,
-      addedAt: new Date().toISOString(),
+      savedAt: new Date().toISOString(),
     });
     storage.setItem(`readLaterList`, JSON.stringify(readLaterList));
   } else {
-    storage.setItem(`readLaterList`, JSON.stringify([{ articleId, addedAt: new Date().toISOString() }]));
+    storage.setItem(`readLaterList`, JSON.stringify([{ articleId, savedAt: new Date().toISOString() }]));
   }
 };
 

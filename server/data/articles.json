@@ -22,5 +22,781 @@
     "publishedAt": "2024-03-10T14:00:00.000Z",
     "imageUrl": "https://picsum.photos/seed/monorepo/800/600",
     "section": "Tooling"
+  },
+  {
+    "id": "4",
+    "title": "TypeScript Generics in Depth",
+    "summary": "Master TypeScript generics with practical examples and real-world patterns.",
+    "publishedAt": "2024-01-20T08:00:00.000Z",
+    "imageUrl": "https://picsum.photos/seed/ts-generics/800/600",
+    "section": "Technology"
+  },
+  {
+    "id": "5",
+    "title": "Building Accessible React Components",
+    "summary": "How to make your React components accessible to everyone with ARIA and semantic HTML.",
+    "publishedAt": "2024-02-05T11:00:00.000Z",
+    "imageUrl": "https://picsum.photos/seed/a11y/800/600",
+    "section": "Design"
+  },
+  {
+    "id": "6",
+    "title": "State Management in 2024",
+    "summary": "Comparing Zustand, Jotai, Redux Toolkit, and the Context API for modern apps.",
+    "publishedAt": "2024-02-12T13:00:00.000Z",
+    "imageUrl": "https://picsum.photos/seed/state-mgmt/800/600",
+    "section": "Technology"
+  },
+  {
+    "id": "7",
+    "title": "CSS Container Queries Explained",
+    "summary": "How container queries change the way we write responsive CSS.",
+    "publishedAt": "2024-02-18T10:30:00.000Z",
+    "imageUrl": "https://picsum.photos/seed/css-cq/800/600",
+    "section": "Design"
+  },
+  {
+    "id": "8",
+    "title": "Node.js Streams for Large Data",
+    "summary": "Process gigabytes of data efficiently using Node.js streams and backpressure.",
+    "publishedAt": "2024-02-25T09:00:00.000Z",
+    "imageUrl": "https://picsum.photos/seed/node-streams/800/600",
+    "section": "Backend"
+  },
+  {
+    "id": "9",
+    "title": "An Introduction to Edge Functions",
+    "summary": "Deploy serverless functions at the edge for ultra-low latency with Vercel and Cloudflare.",
+    "publishedAt": "2024-03-01T14:00:00.000Z",
+    "imageUrl": "https://picsum.photos/seed/edge-fn/800/600",
+    "section": "Infrastructure"
+  },
+  {
+    "id": "10",
+    "title": "Testing React Apps with Vitest",
+    "summary": "A practical guide to unit and integration testing with Vitest and React Testing Library.",
+    "publishedAt": "2024-03-05T08:30:00.000Z",
+    "imageUrl": "https://picsum.photos/seed/vitest/800/600",
+    "section": "Tutorial"
+  },
+  {
+    "id": "11",
+    "title": "How Signals Work in JavaScript Frameworks",
+    "summary": "Exploring reactive signals in Solid.js, Angular, and the TC39 Signals proposal.",
+    "publishedAt": "2024-03-08T10:00:00.000Z",
+    "imageUrl": "https://picsum.photos/seed/signals/800/600",
+    "section": "Technology"
+  },
+  {
+    "id": "12",
+    "title": "Optimistic UI Patterns",
+    "summary": "Build snappy interfaces by updating the UI before the server responds.",
+    "publishedAt": "2024-03-12T11:00:00.000Z",
+    "imageUrl": "https://picsum.photos/seed/optimistic-ui/800/600",
+    "section": "Design"
+  },
+  {
+    "id": "13",
+    "title": "PostgreSQL Full-Text Search",
+    "summary": "Build powerful search features using PostgreSQL's built-in full-text search engine.",
+    "publishedAt": "2024-03-15T09:00:00.000Z",
+    "imageUrl": "https://picsum.photos/seed/pg-fts/800/600",
+    "section": "Backend"
+  },
+  {
+    "id": "14",
+    "title": "Web Performance Metrics That Matter",
+    "summary": "LCP, CLS, INP — what they mean and how to improve them in production.",
+    "publishedAt": "2024-03-18T13:00:00.000Z",
+    "imageUrl": "https://picsum.photos/seed/web-perf/800/600",
+    "section": "Technology"
+  },
+  {
+    "id": "15",
+    "title": "Designing Dark Mode Systems",
+    "summary": "A systematic approach to building dark mode that doesn't feel like an afterthought.",
+    "publishedAt": "2024-03-22T10:00:00.000Z",
+    "imageUrl": "https://picsum.photos/seed/dark-mode/800/600",
+    "section": "Design"
+  },
+  {
+    "id": "16",
+    "title": "GraphQL vs REST in 2024",
+    "summary": "When to choose GraphQL over REST, and when REST is still the right call.",
+    "publishedAt": "2024-03-25T09:30:00.000Z",
+    "imageUrl": "https://picsum.photos/seed/graphql-rest/800/600",
+    "section": "Backend"
+  },
+  {
+    "id": "17",
+    "title": "Understanding the Event Loop",
+    "summary": "A visual explanation of how JavaScript's event loop, microtasks, and macrotasks work.",
+    "publishedAt": "2024-03-28T11:00:00.000Z",
+    "imageUrl": "https://picsum.photos/seed/event-loop/800/600",
+    "section": "Technology"
+  },
+  {
+    "id": "18",
+    "title": "Tailwind CSS Architecture at Scale",
+    "summary": "Strategies for keeping Tailwind maintainable in large codebases and design systems.",
+    "publishedAt": "2024-04-01T08:00:00.000Z",
+    "imageUrl": "https://picsum.photos/seed/tailwind-scale/800/600",
+    "section": "Design"
+  },
+  {
+    "id": "19",
+    "title": "Docker Compose for Local Development",
+    "summary": "Spin up databases, queues, and services locally with Docker Compose.",
+    "publishedAt": "2024-04-04T10:00:00.000Z",
+    "imageUrl": "https://picsum.photos/seed/docker-compose/800/600",
+    "section": "Tooling"
+  },
+  {
+    "id": "20",
+    "title": "The Future of React Server Components",
+    "summary": "How RSC changes the mental model for data fetching and component rendering.",
+    "publishedAt": "2024-04-08T09:00:00.000Z",
+    "imageUrl": "https://picsum.photos/seed/rsc/800/600",
+    "section": "Technology"
+  },
+  {
+    "id": "21",
+    "title": "Git Internals: Objects and Refs",
+    "summary": "Understand what's really happening under the hood when you commit, branch, and merge.",
+    "publishedAt": "2024-04-10T14:00:00.000Z",
+    "imageUrl": "https://picsum.photos/seed/git-internals/800/600",
+    "section": "Tooling"
+  },
+  {
+    "id": "22",
+    "title": "Building a Design System from Scratch",
+    "summary": "Step-by-step guide to creating tokens, components, and documentation for a design system.",
+    "publishedAt": "2024-04-14T10:00:00.000Z",
+    "imageUrl": "https://picsum.photos/seed/design-system/800/600",
+    "section": "Design"
+  },
+  {
+    "id": "23",
+    "title": "Redis Caching Strategies",
+    "summary": "Cache-aside, write-through, and write-behind — choosing the right strategy for your app.",
+    "publishedAt": "2024-04-17T09:00:00.000Z",
+    "imageUrl": "https://picsum.photos/seed/redis-cache/800/600",
+    "section": "Backend"
+  },
+  {
+    "id": "24",
+    "title": "Animating with Framer Motion",
+    "summary": "Create fluid, production-ready animations in React with Framer Motion.",
+    "publishedAt": "2024-04-21T11:00:00.000Z",
+    "imageUrl": "https://picsum.photos/seed/framer-motion/800/600",
+    "section": "Design"
+  },
+  {
+    "id": "25",
+    "title": "tRPC: End-to-End Type Safety",
+    "summary": "Build fully type-safe APIs without schemas or code generation using tRPC.",
+    "publishedAt": "2024-04-24T08:30:00.000Z",
+    "imageUrl": "https://picsum.photos/seed/trpc/800/600",
+    "section": "Technology"
+  },
+  {
+    "id": "26",
+    "title": "Kubernetes for JavaScript Developers",
+    "summary": "The essential Kubernetes concepts every Node.js developer needs to know.",
+    "publishedAt": "2024-04-28T10:00:00.000Z",
+    "imageUrl": "https://picsum.photos/seed/k8s-js/800/600",
+    "section": "Infrastructure"
+  },
+  {
+    "id": "27",
+    "title": "Web Workers and Shared Buffers",
+    "summary": "Offload CPU-intensive work to background threads with Web Workers and SharedArrayBuffer.",
+    "publishedAt": "2024-05-01T09:00:00.000Z",
+    "imageUrl": "https://picsum.photos/seed/web-workers/800/600",
+    "section": "Technology"
+  },
+  {
+    "id": "28",
+    "title": "Prisma ORM: Beyond the Basics",
+    "summary": "Advanced Prisma patterns: transactions, raw queries, and multi-tenancy.",
+    "publishedAt": "2024-05-05T11:00:00.000Z",
+    "imageUrl": "https://picsum.photos/seed/prisma-adv/800/600",
+    "section": "Backend"
+  },
+  {
+    "id": "29",
+    "title": "Micro-Frontends in Practice",
+    "summary": "Federated modules, iframes, and web components — practical patterns for micro-frontends.",
+    "publishedAt": "2024-05-08T13:00:00.000Z",
+    "imageUrl": "https://picsum.photos/seed/micro-fe/800/600",
+    "section": "Architecture"
+  },
+  {
+    "id": "30",
+    "title": "Observability with OpenTelemetry",
+    "summary": "Add traces, metrics, and logs to your Node.js app with OpenTelemetry.",
+    "publishedAt": "2024-05-12T09:00:00.000Z",
+    "imageUrl": "https://picsum.photos/seed/otel/800/600",
+    "section": "Infrastructure"
+  },
+  {
+    "id": "31",
+    "title": "React Query Data Fetching Patterns",
+    "summary": "Pagination, infinite scroll, mutations, and optimistic updates with TanStack Query.",
+    "publishedAt": "2024-05-15T10:00:00.000Z",
+    "imageUrl": "https://picsum.photos/seed/react-query/800/600",
+    "section": "Tutorial"
+  },
+  {
+    "id": "32",
+    "title": "SQLite on the Edge",
+    "summary": "Turso, Cloudflare D1, and Fly.io — running SQLite at the edge in 2024.",
+    "publishedAt": "2024-05-19T08:00:00.000Z",
+    "imageUrl": "https://picsum.photos/seed/sqlite-edge/800/600",
+    "section": "Infrastructure"
+  },
+  {
+    "id": "33",
+    "title": "Functional Programming in TypeScript",
+    "summary": "Functors, monads, and pipe operators — FP concepts applied to everyday TypeScript.",
+    "publishedAt": "2024-05-22T11:00:00.000Z",
+    "imageUrl": "https://picsum.photos/seed/fp-ts/800/600",
+    "section": "Technology"
+  },
+  {
+    "id": "34",
+    "title": "Building CLI Tools with Node.js",
+    "summary": "Create polished command-line tools with Commander, Inquirer, and Chalk.",
+    "publishedAt": "2024-05-26T09:00:00.000Z",
+    "imageUrl": "https://picsum.photos/seed/node-cli/800/600",
+    "section": "Tooling"
+  },
+  {
+    "id": "35",
+    "title": "Understanding HTTP/3 and QUIC",
+    "summary": "What changes with HTTP/3, why QUIC matters, and how it affects web performance.",
+    "publishedAt": "2024-05-29T10:00:00.000Z",
+    "imageUrl": "https://picsum.photos/seed/http3/800/600",
+    "section": "Technology"
+  },
+  {
+    "id": "36",
+    "title": "Storybook for Component Development",
+    "summary": "Build, document, and test UI components in isolation with Storybook.",
+    "publishedAt": "2024-06-02T08:30:00.000Z",
+    "imageUrl": "https://picsum.photos/seed/storybook/800/600",
+    "section": "Tooling"
+  },
+  {
+    "id": "37",
+    "title": "End-to-End Testing with Playwright",
+    "summary": "Write reliable, cross-browser E2E tests with Playwright's modern API.",
+    "publishedAt": "2024-06-05T09:00:00.000Z",
+    "imageUrl": "https://picsum.photos/seed/playwright/800/600",
+    "section": "Tutorial"
+  },
+  {
+    "id": "38",
+    "title": "Zod: Runtime Type Validation",
+    "summary": "Validate, parse, and infer TypeScript types at runtime with Zod.",
+    "publishedAt": "2024-06-09T11:00:00.000Z",
+    "imageUrl": "https://picsum.photos/seed/zod/800/600",
+    "section": "Technology"
+  },
+  {
+    "id": "39",
+    "title": "Service Workers and Offline-First Apps",
+    "summary": "Cache strategies, background sync, and push notifications with Service Workers.",
+    "publishedAt": "2024-06-12T10:00:00.000Z",
+    "imageUrl": "https://picsum.photos/seed/sw-offline/800/600",
+    "section": "Technology"
+  },
+  {
+    "id": "40",
+    "title": "Monadic Error Handling in TypeScript",
+    "summary": "Replace try/catch with Result and Option types for composable error handling.",
+    "publishedAt": "2024-06-16T08:00:00.000Z",
+    "imageUrl": "https://picsum.photos/seed/result-type/800/600",
+    "section": "Technology"
+  },
+  {
+    "id": "41",
+    "title": "AWS Lambda Cold Starts Explained",
+    "summary": "Why cold starts happen, how bad they actually are, and proven strategies to reduce them.",
+    "publishedAt": "2024-06-19T09:30:00.000Z",
+    "imageUrl": "https://picsum.photos/seed/lambda-cold/800/600",
+    "section": "Infrastructure"
+  },
+  {
+    "id": "42",
+    "title": "Typography for Developers",
+    "summary": "Font pairing, line height, measure, and scale — the typographic rules every dev should know.",
+    "publishedAt": "2024-06-23T10:00:00.000Z",
+    "imageUrl": "https://picsum.photos/seed/typography/800/600",
+    "section": "Design"
+  },
+  {
+    "id": "43",
+    "title": "WebSockets vs Server-Sent Events",
+    "summary": "Choose the right real-time protocol for your use case: bi-directional vs unidirectional.",
+    "publishedAt": "2024-06-26T11:00:00.000Z",
+    "imageUrl": "https://picsum.photos/seed/ws-sse/800/600",
+    "section": "Backend"
+  },
+  {
+    "id": "44",
+    "title": "Next.js App Router Deep Dive",
+    "summary": "Layouts, loading states, error boundaries, and parallel routes in Next.js App Router.",
+    "publishedAt": "2024-06-30T09:00:00.000Z",
+    "imageUrl": "https://picsum.photos/seed/nextjs-app/800/600",
+    "section": "Tutorial"
+  },
+  {
+    "id": "45",
+    "title": "CI/CD with GitHub Actions",
+    "summary": "Automate testing, building, and deploying your app with GitHub Actions workflows.",
+    "publishedAt": "2024-07-03T08:00:00.000Z",
+    "imageUrl": "https://picsum.photos/seed/gh-actions/800/600",
+    "section": "Tooling"
+  },
+  {
+    "id": "46",
+    "title": "Database Indexing Strategies",
+    "summary": "Composite indexes, covering indexes, and partial indexes — when and why to use each.",
+    "publishedAt": "2024-07-07T10:00:00.000Z",
+    "imageUrl": "https://picsum.photos/seed/db-indexing/800/600",
+    "section": "Backend"
+  },
+  {
+    "id": "47",
+    "title": "React 19 New Features",
+    "summary": "Actions, use(), optimistic updates, and the new compiler — everything new in React 19.",
+    "publishedAt": "2024-07-10T11:00:00.000Z",
+    "imageUrl": "https://picsum.photos/seed/react19/800/600",
+    "section": "Technology"
+  },
+  {
+    "id": "48",
+    "title": "Building Real-Time Features with Supabase",
+    "summary": "Postgres changes, presence, and broadcast — building real-time apps with Supabase.",
+    "publishedAt": "2024-07-14T09:00:00.000Z",
+    "imageUrl": "https://picsum.photos/seed/supabase-rt/800/600",
+    "section": "Backend"
+  },
+  {
+    "id": "49",
+    "title": "Color Theory for UI Designers",
+    "summary": "HSL color space, semantic color tokens, and building accessible color palettes.",
+    "publishedAt": "2024-07-17T10:00:00.000Z",
+    "imageUrl": "https://picsum.photos/seed/color-theory/800/600",
+    "section": "Design"
+  },
+  {
+    "id": "50",
+    "title": "Module Federation with Webpack 5",
+    "summary": "Share code across applications at runtime with Webpack 5 Module Federation.",
+    "publishedAt": "2024-07-21T08:00:00.000Z",
+    "imageUrl": "https://picsum.photos/seed/mod-fed/800/600",
+    "section": "Architecture"
+  },
+  {
+    "id": "51",
+    "title": "Rust for JavaScript Developers",
+    "summary": "Ownership, borrowing, and lifetimes explained for developers coming from JS.",
+    "publishedAt": "2024-07-24T09:00:00.000Z",
+    "imageUrl": "https://picsum.photos/seed/rust-js/800/600",
+    "section": "Technology"
+  },
+  {
+    "id": "52",
+    "title": "Effective Code Review Practices",
+    "summary": "How to give and receive code reviews that improve code quality and team culture.",
+    "publishedAt": "2024-07-28T11:00:00.000Z",
+    "imageUrl": "https://picsum.photos/seed/code-review/800/600",
+    "section": "Engineering"
+  },
+  {
+    "id": "53",
+    "title": "Progressive Web Apps in 2024",
+    "summary": "What PWAs can do today: install prompts, file system access, push, and more.",
+    "publishedAt": "2024-07-31T10:00:00.000Z",
+    "imageUrl": "https://picsum.photos/seed/pwa2024/800/600",
+    "section": "Technology"
+  },
+  {
+    "id": "54",
+    "title": "Deploying on Fly.io",
+    "summary": "Run Dockerized apps close to users in 30+ regions with Fly.io.",
+    "publishedAt": "2024-08-04T08:00:00.000Z",
+    "imageUrl": "https://picsum.photos/seed/flyio/800/600",
+    "section": "Infrastructure"
+  },
+  {
+    "id": "55",
+    "title": "Secure Authentication with Passkeys",
+    "summary": "Replace passwords with WebAuthn passkeys for phishing-resistant authentication.",
+    "publishedAt": "2024-08-07T09:30:00.000Z",
+    "imageUrl": "https://picsum.photos/seed/passkeys/800/600",
+    "section": "Security"
+  },
+  {
+    "id": "56",
+    "title": "React Native Gesture Handling",
+    "summary": "Build complex multi-touch gestures with React Native Gesture Handler and Reanimated.",
+    "publishedAt": "2024-08-11T10:00:00.000Z",
+    "imageUrl": "https://picsum.photos/seed/rn-gesture/800/600",
+    "section": "Tutorial"
+  },
+  {
+    "id": "57",
+    "title": "Data Structures Every Developer Should Know",
+    "summary": "Practical applications of trees, graphs, heaps, and tries in everyday programming.",
+    "publishedAt": "2024-08-14T09:00:00.000Z",
+    "imageUrl": "https://picsum.photos/seed/data-structs/800/600",
+    "section": "Engineering"
+  },
+  {
+    "id": "58",
+    "title": "Building an AI Chatbot with Vercel AI SDK",
+    "summary": "Streaming responses, tool calls, and multi-modal input with the Vercel AI SDK.",
+    "publishedAt": "2024-08-18T11:00:00.000Z",
+    "imageUrl": "https://picsum.photos/seed/vercel-ai/800/600",
+    "section": "Technology"
+  },
+  {
+    "id": "59",
+    "title": "Vite Plugin Development",
+    "summary": "Write custom Vite plugins to transform, inject, and optimize your build pipeline.",
+    "publishedAt": "2024-08-21T08:30:00.000Z",
+    "imageUrl": "https://picsum.photos/seed/vite-plugin/800/600",
+    "section": "Tooling"
+  },
+  {
+    "id": "60",
+    "title": "Concurrency Patterns in Node.js",
+    "summary": "Worker threads, cluster module, and async parallelism for CPU-bound Node.js tasks.",
+    "publishedAt": "2024-08-25T10:00:00.000Z",
+    "imageUrl": "https://picsum.photos/seed/node-concurrency/800/600",
+    "section": "Backend"
+  },
+  {
+    "id": "61",
+    "title": "Schema-Driven Development with Drizzle",
+    "summary": "Define your database schema in TypeScript and let Drizzle ORM handle the rest.",
+    "publishedAt": "2024-08-28T09:00:00.000Z",
+    "imageUrl": "https://picsum.photos/seed/drizzle/800/600",
+    "section": "Backend"
+  },
+  {
+    "id": "62",
+    "title": "Reducing JavaScript Bundle Size",
+    "summary": "Tree shaking, code splitting, dynamic imports, and bundle analysis techniques.",
+    "publishedAt": "2024-09-01T10:00:00.000Z",
+    "imageUrl": "https://picsum.photos/seed/bundle-size/800/600",
+    "section": "Technology"
+  },
+  {
+    "id": "63",
+    "title": "Designing for Mobile-First",
+    "summary": "Touch targets, thumb zones, and gesture-friendly layouts for mobile-first design.",
+    "publishedAt": "2024-09-04T11:00:00.000Z",
+    "imageUrl": "https://picsum.photos/seed/mobile-first/800/600",
+    "section": "Design"
+  },
+  {
+    "id": "64",
+    "title": "Feature Flags with OpenFeature",
+    "summary": "Decouple deployments from releases using the vendor-agnostic OpenFeature standard.",
+    "publishedAt": "2024-09-08T08:00:00.000Z",
+    "imageUrl": "https://picsum.photos/seed/feature-flags/800/600",
+    "section": "Engineering"
+  },
+  {
+    "id": "65",
+    "title": "Bun: The All-in-One JS Toolkit",
+    "summary": "Runtime, bundler, test runner, and package manager — what Bun does and when to use it.",
+    "publishedAt": "2024-09-11T09:30:00.000Z",
+    "imageUrl": "https://picsum.photos/seed/bun/800/600",
+    "section": "Tooling"
+  },
+  {
+    "id": "66",
+    "title": "Monorepo Tooling: Nx vs Turborepo",
+    "summary": "Compare Nx and Turborepo for task scheduling, caching, and code generation.",
+    "publishedAt": "2024-09-15T10:00:00.000Z",
+    "imageUrl": "https://picsum.photos/seed/nx-turbo/800/600",
+    "section": "Tooling"
+  },
+  {
+    "id": "67",
+    "title": "Error Boundaries and Suspense in React",
+    "summary": "Graceful error handling and loading states with React Error Boundaries and Suspense.",
+    "publishedAt": "2024-09-18T09:00:00.000Z",
+    "imageUrl": "https://picsum.photos/seed/error-boundary/800/600",
+    "section": "Tutorial"
+  },
+  {
+    "id": "68",
+    "title": "PostgreSQL JSON Support",
+    "summary": "Store, query, and index JSON data in PostgreSQL with jsonb.",
+    "publishedAt": "2024-09-22T11:00:00.000Z",
+    "imageUrl": "https://picsum.photos/seed/pg-json/800/600",
+    "section": "Backend"
+  },
+  {
+    "id": "69",
+    "title": "Cryptography Basics for Developers",
+    "summary": "Hashing, symmetric encryption, public-key cryptography — what every developer needs to know.",
+    "publishedAt": "2024-09-25T08:00:00.000Z",
+    "imageUrl": "https://picsum.photos/seed/crypto-basics/800/600",
+    "section": "Security"
+  },
+  {
+    "id": "70",
+    "title": "React Performance Optimization",
+    "summary": "memo, useMemo, useCallback, and the React Profiler — a practical optimization guide.",
+    "publishedAt": "2024-09-29T10:00:00.000Z",
+    "imageUrl": "https://picsum.photos/seed/react-perf/800/600",
+    "section": "Tutorial"
+  },
+  {
+    "id": "71",
+    "title": "Event-Driven Architecture with Kafka",
+    "summary": "Topics, partitions, consumer groups, and exactly-once semantics in Apache Kafka.",
+    "publishedAt": "2024-10-02T09:00:00.000Z",
+    "imageUrl": "https://picsum.photos/seed/kafka/800/600",
+    "section": "Architecture"
+  },
+  {
+    "id": "72",
+    "title": "Svelte 5 and Runes",
+    "summary": "Svelte's new fine-grained reactivity model with runes explained from the ground up.",
+    "publishedAt": "2024-10-06T10:00:00.000Z",
+    "imageUrl": "https://picsum.photos/seed/svelte5/800/600",
+    "section": "Technology"
+  },
+  {
+    "id": "73",
+    "title": "Building Offline-Capable Mobile Apps",
+    "summary": "Sync queues, conflict resolution, and local-first data with WatermelonDB.",
+    "publishedAt": "2024-10-09T11:00:00.000Z",
+    "imageUrl": "https://picsum.photos/seed/offline-mobile/800/600",
+    "section": "Tutorial"
+  },
+  {
+    "id": "74",
+    "title": "API Rate Limiting Strategies",
+    "summary": "Token bucket, sliding window, and leaky bucket algorithms for API rate limiting.",
+    "publishedAt": "2024-10-13T08:30:00.000Z",
+    "imageUrl": "https://picsum.photos/seed/rate-limit/800/600",
+    "section": "Backend"
+  },
+  {
+    "id": "75",
+    "title": "WebAssembly in the Browser",
+    "summary": "Compile C, Rust, and Go to Wasm and run near-native code in the browser.",
+    "publishedAt": "2024-10-16T09:00:00.000Z",
+    "imageUrl": "https://picsum.photos/seed/wasm/800/600",
+    "section": "Technology"
+  },
+  {
+    "id": "76",
+    "title": "Atomic Design for Component Libraries",
+    "summary": "Atoms, molecules, organisms — applying Brad Frost's atomic design to React component libraries.",
+    "publishedAt": "2024-10-20T10:00:00.000Z",
+    "imageUrl": "https://picsum.photos/seed/atomic-design/800/600",
+    "section": "Design"
+  },
+  {
+    "id": "77",
+    "title": "Zero-Downtime Deployments",
+    "summary": "Blue-green, canary, and rolling deployments — keeping users unaware of your releases.",
+    "publishedAt": "2024-10-23T09:00:00.000Z",
+    "imageUrl": "https://picsum.photos/seed/zero-downtime/800/600",
+    "section": "Infrastructure"
+  },
+  {
+    "id": "78",
+    "title": "Internationalization with react-i18next",
+    "summary": "Pluralization, date formatting, and lazy-loaded namespaces for i18n in React.",
+    "publishedAt": "2024-10-27T11:00:00.000Z",
+    "imageUrl": "https://picsum.photos/seed/i18n/800/600",
+    "section": "Tutorial"
+  },
+  {
+    "id": "79",
+    "title": "CQRS and Event Sourcing",
+    "summary": "Separate reads from writes and rebuild state from an event log with CQRS and event sourcing.",
+    "publishedAt": "2024-10-30T08:00:00.000Z",
+    "imageUrl": "https://picsum.photos/seed/cqrs/800/600",
+    "section": "Architecture"
+  },
+  {
+    "id": "80",
+    "title": "Writing Maintainable CSS",
+    "summary": "Naming conventions, logical properties, and cascade layers for CSS you'll thank yourself for.",
+    "publishedAt": "2024-11-03T10:00:00.000Z",
+    "imageUrl": "https://picsum.photos/seed/maintainable-css/800/600",
+    "section": "Design"
+  },
+  {
+    "id": "81",
+    "title": "Stripe Integration Best Practices",
+    "summary": "Webhooks, idempotency keys, and handling edge cases in Stripe payment flows.",
+    "publishedAt": "2024-11-06T09:00:00.000Z",
+    "imageUrl": "https://picsum.photos/seed/stripe/800/600",
+    "section": "Backend"
+  },
+  {
+    "id": "82",
+    "title": "Automating Accessibility Testing",
+    "summary": "axe-core, Lighthouse CI, and screen reader testing in your CI pipeline.",
+    "publishedAt": "2024-11-10T11:00:00.000Z",
+    "imageUrl": "https://picsum.photos/seed/a11y-testing/800/600",
+    "section": "Tooling"
+  },
+  {
+    "id": "83",
+    "title": "Dependency Injection in TypeScript",
+    "summary": "Inversion of control, decorators, and DI containers like InversifyJS and tsyringe.",
+    "publishedAt": "2024-11-13T08:30:00.000Z",
+    "imageUrl": "https://picsum.photos/seed/di-ts/800/600",
+    "section": "Technology"
+  },
+  {
+    "id": "84",
+    "title": "Turborepo Remote Caching",
+    "summary": "Share build caches across machines and CI runs with Turborepo remote caching.",
+    "publishedAt": "2024-11-17T09:00:00.000Z",
+    "imageUrl": "https://picsum.photos/seed/turbo-cache/800/600",
+    "section": "Tooling"
+  },
+  {
+    "id": "85",
+    "title": "Implementing Search with Typesense",
+    "summary": "Faceted search, typo-tolerance, and instant results with Typesense.",
+    "publishedAt": "2024-11-20T10:00:00.000Z",
+    "imageUrl": "https://picsum.photos/seed/typesense/800/600",
+    "section": "Backend"
+  },
+  {
+    "id": "86",
+    "title": "Cognitive Load in UX Design",
+    "summary": "How to reduce cognitive load in your interfaces through progressive disclosure and chunking.",
+    "publishedAt": "2024-11-24T11:00:00.000Z",
+    "imageUrl": "https://picsum.photos/seed/cognitive-ux/800/600",
+    "section": "Design"
+  },
+  {
+    "id": "87",
+    "title": "Load Testing with k6",
+    "summary": "Write load tests as JavaScript, run them in CI, and find your app's breaking point.",
+    "publishedAt": "2024-11-27T08:00:00.000Z",
+    "imageUrl": "https://picsum.photos/seed/k6/800/600",
+    "section": "Tooling"
+  },
+  {
+    "id": "88",
+    "title": "React Native Navigation Patterns",
+    "summary": "Stack, tab, and drawer navigators with React Navigation — architecture and deep linking.",
+    "publishedAt": "2024-12-01T09:00:00.000Z",
+    "imageUrl": "https://picsum.photos/seed/rn-nav/800/600",
+    "section": "Tutorial"
+  },
+  {
+    "id": "89",
+    "title": "OpenAI Function Calling",
+    "summary": "Build structured LLM outputs and agentic workflows with OpenAI function calling.",
+    "publishedAt": "2024-12-04T10:00:00.000Z",
+    "imageUrl": "https://picsum.photos/seed/openai-fn/800/600",
+    "section": "Technology"
+  },
+  {
+    "id": "90",
+    "title": "The 12-Factor App Revisited",
+    "summary": "How the twelve-factor methodology applies to modern containerized and serverless apps.",
+    "publishedAt": "2024-12-08T09:00:00.000Z",
+    "imageUrl": "https://picsum.photos/seed/12factor/800/600",
+    "section": "Architecture"
+  },
+  {
+    "id": "91",
+    "title": "Building a Markdown Editor",
+    "summary": "Contenteditable, ProseMirror, and CodeMirror — approaches to building rich text editors.",
+    "publishedAt": "2024-12-11T11:00:00.000Z",
+    "imageUrl": "https://picsum.photos/seed/md-editor/800/600",
+    "section": "Tutorial"
+  },
+  {
+    "id": "92",
+    "title": "OWASP Top 10 for Node.js",
+    "summary": "Injection, broken auth, SSRF — the OWASP top 10 risks with Node.js-specific mitigations.",
+    "publishedAt": "2024-12-15T08:00:00.000Z",
+    "imageUrl": "https://picsum.photos/seed/owasp-node/800/600",
+    "section": "Security"
+  },
+  {
+    "id": "93",
+    "title": "Vector Search with pgvector",
+    "summary": "Store embeddings in Postgres and build semantic search with the pgvector extension.",
+    "publishedAt": "2024-12-18T09:30:00.000Z",
+    "imageUrl": "https://picsum.photos/seed/pgvector/800/600",
+    "section": "Backend"
+  },
+  {
+    "id": "94",
+    "title": "Rendering Strategies Compared",
+    "summary": "SSR, SSG, ISR, CSR, and PPR — choosing the right rendering strategy for every page.",
+    "publishedAt": "2024-12-22T10:00:00.000Z",
+    "imageUrl": "https://picsum.photos/seed/rendering/800/600",
+    "section": "Architecture"
+  },
+  {
+    "id": "95",
+    "title": "Git Worktrees for Parallel Development",
+    "summary": "Work on multiple branches simultaneously without stashing using Git worktrees.",
+    "publishedAt": "2024-12-25T08:00:00.000Z",
+    "imageUrl": "https://picsum.photos/seed/git-worktrees/800/600",
+    "section": "Tooling"
+  },
+  {
+    "id": "96",
+    "title": "Caching at Every Layer",
+    "summary": "Browser cache, CDN, reverse proxy, application cache, and database query cache — a complete guide.",
+    "publishedAt": "2024-12-29T09:00:00.000Z",
+    "imageUrl": "https://picsum.photos/seed/caching-layers/800/600",
+    "section": "Infrastructure"
+  },
+  {
+    "id": "97",
+    "title": "Building a Component Testing Strategy",
+    "summary": "Unit, integration, visual regression, and accessibility tests for component libraries.",
+    "publishedAt": "2025-01-05T10:00:00.000Z",
+    "imageUrl": "https://picsum.photos/seed/component-testing/800/600",
+    "section": "Engineering"
+  },
+  {
+    "id": "98",
+    "title": "Designing Resilient Systems",
+    "summary": "Circuit breakers, bulkheads, retries, and timeouts — patterns for resilient distributed systems.",
+    "publishedAt": "2025-01-12T09:00:00.000Z",
+    "imageUrl": "https://picsum.photos/seed/resilient-sys/800/600",
+    "section": "Architecture"
+  },
+  {
+    "id": "99",
+    "title": "The State of CSS in 2025",
+    "summary": "Nesting, :has(), view transitions, anchor positioning — all the CSS you should be using now.",
+    "publishedAt": "2025-01-19T11:00:00.000Z",
+    "imageUrl": "https://picsum.photos/seed/css2025/800/600",
+    "section": "Design"
+  },
+  {
+    "id": "100",
+    "title": "Local-First Software",
+    "summary": "CRDTs, sync engines, and the philosophy of building software that works offline by default.",
+    "publishedAt": "2025-01-26T10:00:00.000Z",
+    "imageUrl": "https://picsum.photos/seed/local-first/800/600",
+    "section": "Architecture"
   }
 ]

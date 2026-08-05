@@ -5,5 +5,6 @@ import { fetchWithTimeout, withRetry } from './client';
 export async function fetchArticles(): Promise<Article[]> {
   const res = await withRetry(() => fetchWithTimeout(`${getApiBaseUrl()}/articles`));
   if (!res.ok) throw new Error('Failed to fetch articles');
-  return res.json();
+  const { items } = await res.json();
+  return items;
 }

@@ -45,13 +45,13 @@ function writeJson(filePath, data) {
 // GET /articles
 app.get('/articles', (req, res) => {
   const articles = readJson(ARTICLES_FILE);
-  res.json(articles);
+  res.json({ items: articles });
 });
 
 // GET /read-later
 app.get('/read-later', (req, res) => {
   const readLater = readJson(READ_LATER_FILE);
-  res.json(readLater);
+  res.json({ items: readLater });
 });
 
 // POST /read-later
@@ -64,7 +64,7 @@ app.post('/read-later', (req, res) => {
     return res.status(409).json({ error: 'Article already in read later list' });
   }
 
-  const newItem = { articleId, addedAt: new Date().toISOString() };
+  const newItem = { articleId, savedAt: new Date().toISOString() };
   readLater.push(newItem);
   writeJson(READ_LATER_FILE, readLater);
 
