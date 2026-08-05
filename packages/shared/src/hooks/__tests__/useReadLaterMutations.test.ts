@@ -70,6 +70,20 @@ describe('useAddToReadLater', () => {
     );
   });
 
+  test('appends new item to existing list in storage', async () => {
+    const storage = makeStorage(EXISTING);
+    mockAddToReadLater.mockResolvedValue({ articleId: 'a1', savedAt: '' });
+
+    const { result } = renderHook(() => useAddToReadLater(storage));
+    await act(async () => { await result.current.mutate('a1'); });
+
+    const calls = storage.setItem.mock.calls as [string, string][];
+    const stored: ReadLaterItem[] = JSON.parse(calls[calls.length - 1][1]);
+    expect(stored).toHaveLength(2);
+    expect(stored).toContainEqual(expect.objectContaining({ articleId: 'existing' }));
+    expect(stored).toContainEqual(expect.objectContaining({ articleId: 'a1' }));
+  });
+
   test('sets error on API failure', async () => {
     const storage = makeStorage();
     mockAddToReadLater.mockRejectedValue(new Error('server error'));

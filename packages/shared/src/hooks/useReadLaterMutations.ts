@@ -5,11 +5,9 @@ import type { ReadLaterItem, Storage } from '../types';
 const addToStorage = async (storage: Storage, articleId: string) => {
   const readLaterList = await storage.getItem('readLaterList');
   if (readLaterList) {
-    JSON.parse(readLaterList).push({
-      articleId,
-      savedAt: new Date().toISOString(),
-    });
-    storage.setItem(`readLaterList`, JSON.stringify(readLaterList));
+    const parsed = JSON.parse(readLaterList);
+    parsed.push({ articleId, savedAt: new Date().toISOString() });
+    storage.setItem(`readLaterList`, JSON.stringify(parsed));
   } else {
     storage.setItem(`readLaterList`, JSON.stringify([{ articleId, savedAt: new Date().toISOString() }]));
   }
