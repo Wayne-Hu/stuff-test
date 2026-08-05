@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { ReadLaterProvider } from '@read-later/shared';
 import type { Article } from '@read-later/shared';
 import FeedScreen from './screens/FeedScreen';
@@ -71,11 +72,13 @@ function EmptyDetail() {
 }
 
 export default function App() {
-  const [tab, setTab] = useState<Tab>('feed');
+  const location = useLocation();
+  const navigate = useNavigate();
+  const tab: Tab = location.pathname === '/read-later' ? 'readLater' : 'feed';
   const [selectedArticle, setSelectedArticle] = useState<Article | null>(null);
 
   function switchTab(next: Tab) {
-    setTab(next);
+    navigate(next === 'readLater' ? '/read-later' : '/');
     setSelectedArticle(null);
   }
 
@@ -153,10 +156,7 @@ export default function App() {
             {/* Desktop: right panel (article detail) */}
             <div className="hidden md:block flex-1 overflow-y-auto bg-white">
               {selectedArticle ? (
-                <ArticleScreen
-                  article={selectedArticle}
-                  onBack={() => setSelectedArticle(null)}
-                />
+                <ArticleScreen article={selectedArticle} />
               ) : (
                 <EmptyDetail />
               )}
@@ -165,10 +165,7 @@ export default function App() {
             {/* Mobile: single column */}
             <div className="md:hidden flex-1 overflow-y-auto">
               {selectedArticle ? (
-                <ArticleScreen
-                  article={selectedArticle}
-                  onBack={() => setSelectedArticle(null)}
-                />
+                <ArticleScreen article={selectedArticle} />
               ) : tab === 'feed' ? (
                 <FeedScreen onArticlePress={setSelectedArticle} />
               ) : (

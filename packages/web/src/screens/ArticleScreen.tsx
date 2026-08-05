@@ -5,27 +5,9 @@ import { BookmarkIcon } from '../components/BookmarkIcon';
 
 interface Props {
   article: Article;
-  onBack: () => void;
 }
 
-function BackArrow() {
-  return (
-    <svg
-      width={20}
-      height={20}
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth={2}
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="M19 12H5M12 5l-7 7 7 7" />
-    </svg>
-  );
-}
-
-export default function ArticleScreen({ article, onBack }: Props) {
+export default function ArticleScreen({ article }: Props) {
   const { isSaved, toggle } = useReadLater();
   const saved = isSaved(article.id);
 
@@ -46,15 +28,8 @@ export default function ArticleScreen({ article, onBack }: Props) {
         </button>
       </div>
 
-      {/* Mobile: back + bookmark row */}
-      <div className="md:hidden flex items-center justify-between px-4 py-3 border-b border-gray-100">
-        <button
-          onClick={onBack}
-          className="flex items-center gap-1 text-blue-600 font-medium text-sm"
-        >
-          <BackArrow />
-          Back
-        </button>
+      {/* Mobile: bookmark button */}
+      <div className="md:hidden flex justify-end px-4 py-3 border-b border-gray-100">
         <button
           onClick={() => toggle(article.id)}
           className="p-2 rounded-full hover:bg-gray-100 transition-colors"
