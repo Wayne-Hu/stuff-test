@@ -2,25 +2,25 @@
   "name": "@read-later/web",
   "version": "1.0.0",
   "private": true,
-  "main": "index.js",
+  "type": "module",
   "scripts": {
-    "start": "expo start --web",
-    "build": "expo export --platform web"
+    "start": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
     "@read-later/shared": "*",
-    "expo": "~52.0.0",
-    "expo-status-bar": "~2.0.0",
-    "react": "18.3.1",
-    "react-dom": "18.3.1",
-    "react-native": "0.76.9",
-    "react-native-web": "~0.19.13"
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.24.0",
-    "@expo/webpack-config": "^19.0.0",
     "@types/react": "~18.3.12",
     "@types/react-dom": "~18.3.1",
-    "typescript": "^5.3.3"
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.3.3",
+    "vite": "^6.0.6"
   }
 }

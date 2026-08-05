@@ -7,7 +7,7 @@ A monorepo app for saving and reading articles later, with a shared web and mobi
 ```
 read-later/
 ├── packages/
-│   ├── web/        # Expo web app (React Native Web)
+│   ├── web/        # Vite + React web app (TypeScript + Tailwind)
 │   ├── mobile/     # Expo mobile app (iOS & Android)
 │   └── shared/     # Shared business logic
 └── server/         # Express mock API server (port 3001)
@@ -17,8 +17,7 @@ read-later/
 
 - Node.js 20+
 - Yarn 1.22.22
-- [Expo CLI](https://docs.expo.dev/get-started/installation/) (`npm install -g expo-cli`)
-- For iOS: Xcode + iOS Simulator
+- For iOS: Xcode + iOS Simulator + [Expo CLI](https://docs.expo.dev/get-started/installation/) (`npm install -g expo-cli`)
 
 ## Setup
 
@@ -50,7 +49,7 @@ Server runs at `http://localhost:3001`.
 yarn web
 ```
 
-Opens the app in your browser via Expo.
+Opens the app in your browser at `http://localhost:5173` (Vite dev server).
 
 ### 3. Start the mobile app
 
