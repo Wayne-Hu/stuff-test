@@ -6,6 +6,28 @@ const path = require('path');
 const app = express();
 const PORT = 3001;
 
+// Simulates realistic network latency.
+// 88% of requests: 100–500ms   (normal)
+// 10% of requests: 500–2000ms  (occasional slow)
+//  2% of requests: 5000–8000ms (rare timeout-triggering stall)
+function simulatedLatency() {
+  const roll = Math.random();
+  let delay;
+  if (roll < 0.02) {
+    delay = 5000 + Math.random() * 3000;  // 5000ms–8000ms
+  } else if (roll < 0.12) {
+    delay = 500 + Math.random() * 1500;   // 500ms–2000ms
+  } else {
+    delay = 100 + Math.random() * 400;    // 100ms–500ms
+  }
+  return new Promise((resolve) => setTimeout(resolve, delay));
+}
+
+app.use(async (_req, _res, next) => {
+  await simulatedLatency();
+  next();
+});
+
 const ARTICLES_FILE = path.join(__dirname, 'data', 'articles.json');
 const READ_LATER_FILE = path.join(__dirname, 'data', 'read-later.json');
 
